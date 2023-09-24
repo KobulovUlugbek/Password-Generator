@@ -1,0 +1,85 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(157, 90, 224);
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.pw-container{
+    background-color: rgb(68, 33, 104);
+    width: 400px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+    overflow: auto;
+}
+
+.pw-header{
+    padding: 1rem;
+}
+
+.pw-body{
+    padding: 0 1rem 1rem;
+}
+
+.pw{
+    width: 100%;
+    height: 70px;
+    background-color: rebeccapurple;
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: 1.5rem;
+    padding: 1rem;
+    overflow: auto;
+}
+
+.pw button{
+    position: absolute;
+    bottom: 50px;
+    left: 87.5%;
+    transform: translate(-50%, 50%);
+    background-color: rgb(85, 29, 141);
+    padding: 0.5rem 1rem;
+    font-family: inherit;
+    color: white;
+    border: none;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease;
+    font-weight: bold;
+    z-index: 110;
+}
+
+.pw:hover button{
+    background-color: rgb(52, 19, 85);
+    opacity: 1;
+    z-index: 110;
+}
+
+.form-control{
+    display: flex;
+    justify-content: space-between;
+    margin: 0.5rem 0;
+    color: #eee;
+}
+
+.generate{
+    display: block;
+    background-color: #ecb602;
+    color: rebeccapurple;
+    font-weight: bold;
+    padding: 0.75rem;
+    font-size: 1.5rem;
+    border: none;
+    width: 100%;
+    font-weight: bold;
+    margin-top: 1rem;
+    cursor: pointer;
+}
